@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App - ReactJS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/weather-icons.min.css">
+    <link rel="stylesheet" href="/css/weather-icons-wind.min.css">
+    <script src="https://fb.me/react-0.14.0.min.js"></script>
+    <script src="https://fb.me/react-dom-0.14.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.25/browser.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <h1 class="page-header text-center"><i class="wi wi-night-sleet"></i> Weather App</h1>
+            <div id="weatherPop"></div>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+<script type="text/babel">
+    //example of api - http://api.openweathermap.org/data/2.5/weather?zip=94044,us&appid=44db6a862fba0b067b1930da0d769e98
+
+    var HelloMessage = React.createClass({
+        render: function() {
+            return(
+                    <div><h3>Hello {this.props.word}!</h3><p><a href="#">Click for message</a></p></div>
+            );
+        }
+    });
+
+    ReactDOM.render(
+        <HelloMessage word="Everyone" />,
+        document.getElementById('weatherPop')
+    );
+</script>
+</body>
+</html>

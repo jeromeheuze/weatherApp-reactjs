@@ -1,4 +1,4 @@
-# weatherApp-reactjs
+# weatherApp-reactjs - Work In Progress
 Weather app made with ReactJS and OpenWeatherMap API
 
 #Stack

@@ -7,7 +7,9 @@
     "body-parser": "*",
     "express": "*",
     "gulp": "*",
-    "gulp-sass": "*"
+    "gulp-sass": "*",
+    "gulp-autoprefixer": "*",
+    "sassdoc": "*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

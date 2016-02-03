@@ -17,13 +17,23 @@
         <div class="col-md-3"></div>
         <div class="col-md-6">
             <h1 class="page-header text-center"><i class="wi wi-night-sleet"></i> Weather App</h1>
-            <div id="weatherPop"></div>
+            <div class="row" id="weatherPop"></div>
         </div>
         <div class="col-md-3"></div>
     </div>
 </div>
 <script type="text/babel">
     //example of api - http://api.openweathermap.org/data/2.5/weather?zip=94044,us&appid=44db6a862fba0b067b1930da0d769e98
+    var Page = React.createClass({
+        render: function() {
+            return(
+                    <div className="col-lg-12">
+                        <TopBanner title="Weather App" />
+                        <BottomBanner text="Made with ReactJS and OpenWeatherMap API" />
+                    </div>
+            );
+        }
+    });
     var TopBanner = React.createClass({
         render: function() {
             return(
@@ -33,9 +43,17 @@
             );
         }
     });
-
+    var BottomBanner = React.createClass({
+        render: function() {
+            return(
+                    <div className="bottombanner">
+                        <h2>{this.props.text}</h2>
+                    </div>
+            );
+        }
+    });
     ReactDOM.render(
-        <TopBanner title="Weather App" />,
+        <Page />,
         document.getElementById('weatherPop')
     );
 </script>

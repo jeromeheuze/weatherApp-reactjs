@@ -1,7 +1,45 @@
-#weatherPop .topbanner {
-  background: #ccc;
+#weatherPop {
+  box-shadow: 0px 0px 15px #ccc;
+  width: 414px;
+  height: 736px;
+  margin: 0 auto;
+  background: url("/img/bg.png") center center no-repeat;
 }
 
-#weatherPop .topbanner h3 {
+#weatherPop .col-lg-12 {
+  padding: 0;
+  position: relative;
+  height: 100%;
+}
+
+#weatherPop .topbanner {
+  background: #DCDCDC;
+  height: 76px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0.75;
+}
+
+#weatherPop .topbanner h2 {
   color: #000;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  margin: 0;
+}
+
+#weatherPop .bottombanner {
+  background: #fff;
+  width: 100%;
+  height: 76px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+}
+
+#weatherPop .bottombanner p {
+  text-align: center;
 }

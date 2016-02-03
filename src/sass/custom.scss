@@ -9,6 +9,30 @@
 /// background color for the top banner
 $topbanner_grey: #DCDCDC;
 
+/// ribons WIP
+.corner-ribbon{
+  width: 200px;
+  background: #e43;
+  position: absolute;
+  top: 25px;
+  left: -50px;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  color: #f0f0f0;
+  transform: rotate(-45deg);
+  	&.sticky{
+  	  position: fixed;
+	}
+	&.top-right{
+	  top: 25px;
+	  right: -50px;
+	  left: auto;
+	  transform: rotate(45deg);
+	}
+	&.blue{background: #39d;}
+}
+
 #weatherPop {
 	box-shadow: 0px 0px 15px #ccc;
 	width: 414px;

@@ -5,7 +5,9 @@
   "main": "server.js",
   "dependencies": {
     "body-parser": "*",
-    "express": "*"
+    "express": "*",
+    "gulp": "*",
+    "gulp-sass": "*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

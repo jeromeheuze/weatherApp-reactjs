@@ -1,12 +1,16 @@
 var React = require('react');
+var TopBanner = require('./TopBanner.js');
+var BottomBanner = require('./BottomBanner.js');
 
-var App = React.createClass({
+var Page = React.createClass({
 	render: function() {
-		return (
-			<h1>Hello world!</h1>
+		return(
+			<div className="col-lg-12">
+				<TopBanner title="Weather App" />
+				<BottomBanner text="Made with ReactJS and OpenWeatherMap API" />
+			</div>
 		);
 	}
-	
 });
 	
-module.exports = App;
+module.exports = Page;

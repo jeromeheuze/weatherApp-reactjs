@@ -33,7 +33,8 @@
     width: 414px;
     height: 736px;
     margin: 0 auto;
-    background: url("/img/bg.png") center center no-repeat
+    background: url("/img/bg.png") center center no-repeat;
+    position: relative;
 }
 
 #weatherPop .col-lg-12 {
@@ -67,6 +68,13 @@
     line-height: 20px;
     text-align: center;
     margin: 0
+}
+
+#weatherPop .zipfield {
+    position: absolute;
+    bottom: 120px;
+    width: 250px;
+    margin-left: 86px;
 }
 
 #weatherPop .bottombanner {

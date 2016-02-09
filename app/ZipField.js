@@ -6,7 +6,8 @@ var ZipField = React.createClass({
         return {
             value: '',
             cityName: '',
-            cityDesc: 'Enter Zip below'
+            cityDesc: 'Enter Zip below',
+            cityIcon: ''
         };
     },
     handleChange: function(event) {
@@ -32,6 +33,7 @@ var ZipField = React.createClass({
                 if (data.cod != '404') {
                     this.setState({cityName: data.name});
                     this.setState({cityDesc: data.weather[0].description});
+                    this.setState({cityIcon: 'wi wi-owm-'+data.weather[0].id})
                 } else {
                     this.setState({cityDesc: data.message});
                 }
@@ -53,6 +55,7 @@ var ZipField = React.createClass({
                 <div className="zipmodal">
                     <h2 className="text-center">{this.state.cityName}</h2>
                     <p className="text-center">{this.state.cityDesc}</p>
+                    <p className="text-center"><i className={this.state.cityIcon}></i></p>
                 </div>
                 <form className="zipfield">
                     <div className="form-group">

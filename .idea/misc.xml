@@ -9,6 +9,9 @@
     <pharConfigPath>$PROJECT_DIR$/../../fnd-www-sp23-trunk-20150114-0000/composer.json</pharConfigPath>
     <pharPath>$USER_HOME$/composer.phar</pharPath>
   </component>
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="JSX" />
+  </component>
   <component name="PhingConfiguration">
     <phingPath>$USER_HOME$/phing-latest.phar</phingPath>
   </component>

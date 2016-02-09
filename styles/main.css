@@ -9,7 +9,8 @@
     letter-spacing: 1px;
     color: #f0f0f0;
     -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg)
+    transform: rotate(-45deg);
+    z-index: 99;
 }
 
 .corner-ribbon.sticky {
@@ -68,6 +69,15 @@
     line-height: 20px;
     text-align: center;
     margin: 0
+}
+
+#weatherPop .zipmodal {
+    position: absolute;
+    top: 120px;
+    width: 80%;
+    margin: 0 42px 0 42px;
+    background: #fff;
+    border-radius: 4px;
 }
 
 #weatherPop .zipfield {

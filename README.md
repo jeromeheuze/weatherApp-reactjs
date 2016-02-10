@@ -5,9 +5,9 @@ Weather app made with ReactJS and OpenWeatherMap API
 - [x] Created Mock in Sketch 3
 - [x] Added Mocks to Behance.net
 - [x] Finished setup Node server and dependencies
-- [ ] Completed Responsive UI
-- [ ] Completed JS functionality
-- [ ] Completed API call to OpenWeatherMap
+- [x] Completed Responsive UI
+- [x] Completed JS functionality
+- [x] Completed API call to OpenWeatherMap
 - [ ] Completed Responsive UI test on devices and web browsers
 - [ ] Project Complete
  
